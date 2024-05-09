@@ -1,0 +1,75 @@
+body {
+    background-color: #250101;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 16px;
+    background-image: url('./images/lol.jpg');
+    background-position: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.header > img {
+    width: 100px;
+}
+
+.title {
+    color: #f7cd46;
+    font-size: 2em;
+}
+
+#root {
+    padding: 2em;
+    background: rgb(0,0,0);
+    background: rgba(0, 0, 0, 0.83);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2em;
+    color: #74f0ed;
+    width: 100%;
+}
+
+.hr {
+    width: 100%;
+    height: .063px;
+    background-color: #74f0ed;
+    margin: 1em 0;
+}
+
+.joke-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.joke-detail{
+    display: flex;
+    gap: 1em;
+    color: #6bb77b;
+}
+
+.loader {
+    border: 5px solid #f3f3f3; 
+    border-top: 5px solid #f7cd46; 
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
