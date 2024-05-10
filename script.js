@@ -6,8 +6,7 @@ fetch('https://v2.jokeapi.dev/joke/Any?type=single&amount=10')
 )
 .then(data => {
     
-    const {jokes} = data;
-    // console.log(jokes);
+    const {jokes} = data; 
     loader.style.display = "none";
     jokes.forEach(({id, category, lang, joke}) => {
         const hr = document.createElement('div');
@@ -28,7 +27,7 @@ fetch('https://v2.jokeapi.dev/joke/Any?type=single&amount=10')
         // add the joke category to the category element
         jokeCategory.textContent = 'Category: ' + category;
 
-        // create an element for to hold the joke language
+        // create an element to hold the joke language
         const jokeLang = document.createElement('p');
         jokeLang.textContent = 'Language: ' + lang;
 
